@@ -1,0 +1,37 @@
+{
+  "name": "rollupDemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/rollupDemo.cjs.js",
+  "module": "dist/rollupDemo.esm.js",
+  "browser": "dist/rollupDemo.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production rollup -c",
+    "dev": "rollup --config -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-noded-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "postcss": "^8.3.0",
+    "rollup": "^2.48.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "core-js": "^3.12.1"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./rollupDemo.umd.js"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 10000;
+      }
+      .card::before {
+        opacity: 0.05;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: url('./th.jpg');
+        transform: matrix(1.2, -0.5, 0.5, 1.4, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="card" id=""></div> -->
+    <input class="myinput" type="text" name="" id="myinput" />
+    <script>
+      setTimeout(() => {
+        document.getElementsByClassName('myinput')[0].focus()
+        console.log('1 :>> ', 1)
+      }, 1000)
+    </script>
+  </body>
+</html>
